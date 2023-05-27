@@ -17,13 +17,15 @@ struct HomeView: View {
             //MARK: - HEADER
             Spacer()
             
-            Image("character-2")
-                .resizable()
-                .scaledToFit()
+            ZStack {
+                
+                CircleGroupView(shapeColor: .gray, shapeOpacity: 0.1)
+                
+                Image("character-2")
+                    .resizable()
+                    .scaledToFit()
                 .padding()
-            
-            
-            
+            } //: HEADER
             
             //MARK: - CENTER
             Text("The time that leads to mastery is dependent on the intensity of the focus")
